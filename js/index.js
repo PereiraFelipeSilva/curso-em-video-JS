@@ -1,14 +1,10 @@
-let nome = window.prompt('Qual é o seu nome?')
-let genero = window.prompt('Qual o seu gênero?')
+const botaoSomar = document.querySelector('.botao-somar')
 
-function saudacao(){
-   if(genero == 'm'){
-      alert(`Seja bem vindo, ${nome}!`)
-   }else if(genero == 'f'){
-      alert(`Seja bem vinda, ${nome}!`)
-   }else if(genero == 'i'){
-      alert(`Seja bem vindx, ${nome}!`)
-   }
-}
+botaoSomar.addEventListener('click', function(){
+   let input1 = document.querySelector('#numero1')
+   let input2 = document.querySelector('#numero2')
+   let resultado = document.querySelector('.resultado')
 
-saudacao()
+   let resposta = Number(input1.value) + Number(input2.value)
+   resultado.textContent = resposta
+})

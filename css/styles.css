@@ -1,15 +1,20 @@
-html {
-  font-size: 100%; }
-
-header {
-  background-color: lightgrey; }
-  header h1 {
-    color: white; }
-
 body {
-  background-color: lightblue; }
+  background: #000; }
   body h1 {
-    font-size: 2em; }
+    color: white;
+    font-size: 3em; }
+
+.campo-soma {
+  margin-top: 2em;
+  display: flex; }
+  .campo-soma span {
+    color: white;
+    margin: 0 2px 0 2px; }
+
+.resultado {
+  color: white;
+  margin-top: 2em;
+  font-size: 1.5em; }
 
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
