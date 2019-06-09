@@ -11,15 +11,22 @@
 
   <body>
 
-    <h1>
-      Somando Valores
-    </h1>
-    <div class="campo-soma">
-        <input type="number" name="numero1" id="numero1"> <span>+</span>
-        <input type="number" name="numero2" id="numero2">
-        <button class="botao-somar">somar</button>
-    </div>
-    <div class="resultado">Resultado</div>
+    <header class="header">
+        <h1 class="titulo-principal">Somando Valores</h1>
+    </header>
+
+    <main class="container">
+      <div class="campo-soma">
+          <input type="number" name="numero1" id="numero1" class="input-numero"> <span class="sinal-soma">+</span>
+          <input type="number" name="numero2" id="numero2" class="input-numero">
+          <button class="botao-somar">somar</button>
+      </div>
+  
+      <div class="resultado">
+        <label for="resultado" id="label-resultado">Resultado</label for="resultado">
+        <input type="text" id="resultado" value="" readonly>
+      </div>
+    </main>
 
     <script src="js/index.js"></script>
   </body>

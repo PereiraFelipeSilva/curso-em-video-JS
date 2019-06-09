@@ -1,21 +1,3 @@
-body {
-  background: #000; }
-  body h1 {
-    color: white;
-    font-size: 3em; }
-
-.campo-soma {
-  margin-top: 2em;
-  display: flex; }
-  .campo-soma span {
-    color: white;
-    margin: 0 2px 0 2px; }
-
-.resultado {
-  color: white;
-  margin-top: 2em;
-  font-size: 1.5em; }
-
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -62,5 +44,45 @@ q:before, q:after {
 table {
   border-collapse: collapse;
   border-spacing: 0; }
+
+body {
+  background-color: #000; }
+
+.header {
+  display: flex;
+  justify-content: center; }
+  .header .titulo-principal {
+    font-size: 3em;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: .25em 0 .25em 0;
+    color: #FFF; }
+
+.campo-soma {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1em; }
+  .campo-soma .input-numero {
+    display: inline-block;
+    height: 1.25em; }
+  .campo-soma .sinal-soma {
+    margin: 0 1ch 0 1ch;
+    color: #FFF; }
+  .campo-soma .botao-somar {
+    display: inline-block;
+    height: 1.75em; }
+
+.resultado {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center; }
+  .resultado #label-resultado {
+    font-size: 2em;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #FFF; }
+  .resultado #resultado {
+    margin-left: 1ch; }
 
 /*# sourceMappingURL=styles.css.map */
