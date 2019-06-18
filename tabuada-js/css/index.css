@@ -37,8 +37,17 @@ section p {
 .resultado {
    padding: 1%;
 }
-#lista-resultado {
+.lista-resultado {
    width: 20ch;
+   min-height: 150px;
+   border: 1px solid rgba(0, 0, 0, 0.3);
+   list-style-type: none;
+   text-decoration: none;
+   display: none;
+}
+.mostrar-lista {
+   display: block;
+   padding: 1%;
 }
 footer {
    text-align: center;
