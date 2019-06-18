@@ -4,35 +4,47 @@
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-   <link rel="stylesheet" href="css/index.css">
    <link rel="stylesheet" href="css/reset.css">
+   <link rel="stylesheet" href="css/index.css">
 
    <title>Tabuada</title>
 </head>
 <body>
-   <header>Tabuada</header>
+   <header>
+      <h1>Tabuada</h1>
+   </header>
    <main>
       <section>
          <div class="info-numero">
             <p>
                Número:
                <input 
+                  class="numero"
                   type="number" 
                   required 
                   placeholder="digite um número"
+               />
+               <input
+               class="button"
+                  type="button"
+                  value="Gerar tabuada"
                />
             </p>
          </div>
          <div class="resultado">
             <textarea 
-               name="lista-resultado" 
-               id="" 
-               cols="30" 
-               rows="10">
+               name="lista-resultado"
+               id="lista-resultado"
+               cols="5"
+               rows="11"
+               readonly>
             </textarea>
          </div>
       </section>
    </main>
+   <footer>
+      &copy; CursoemVideo
+   </footer>
 
    <script src="js/index.js"></script>
 </body>
