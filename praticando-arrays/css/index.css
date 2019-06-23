@@ -18,6 +18,7 @@ section {
    padding: .5em;
    border-radius: 10px;
    margin-bottom: 2%;
+   width: 500px;
 }
 .info-numeros {
    display: flex;
@@ -34,18 +35,24 @@ section {
 }
 .area-numeros {
    border-bottom: 1%;
+   display: none;
 }
 .array-numeros {
    border: 1px solid rgba(0, 0, 0, 0.3);
    width: max-content;
-   display: none;
+   padding: 5px;
+   font-family: Arial, Helvetica, sans-serif;
+   font-size: .75em;
 }
 /* classe ativada com js ↓ */
-.exibe-array-numero {
+.show-content {
    display: block;
 }
 .resultado {
    margin-bottom: 1%;
+}
+.jogar-novamente {
+   cursor: pointer;
 }
 footer {
    color: #FFF;
