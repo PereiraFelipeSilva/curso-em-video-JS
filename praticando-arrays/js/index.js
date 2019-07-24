@@ -76,4 +76,5 @@ botaoReiniciar.addEventListener('click', ()=> {
    resultados.innerHTML = ''
    lista.innerHTML = ''
    areaNumeros.classList.remove('show-content')
+   inputNumero.focus();
 })
